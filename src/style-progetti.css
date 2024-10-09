@@ -1,0 +1,118 @@
+.project-content {
+  margin-inline: 2rem;
+}
+.project-paragraph {
+  font-size: var(--font-size-xl);
+  line-height: 30px;
+  font-weight: var(--font-weight-light);
+}
+.pp-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  row-gap: 2rem;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pp-project-card {
+  background-color: var(--color-white);
+  box-shadow: 2px 4px 12px #00000014;
+  border-radius: 18px;
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0; /* Impedisce alle card di ridimensionarsi */
+}
+
+.pp-project-card:hover {
+  scale: 1.03;
+  cursor: pointer;
+  box-shadow: 2px 4px 12px #00000029;
+}
+
+.pp-project-card img,
+.pp-project-video {
+  width: 100%;
+  height: auto;
+  border-radius: 18px 18px 0 0;
+}
+
+.pp-project-info {
+  padding: 2rem;
+}
+
+.project-type.pp {
+  font-size: var(--font-size-xs);
+  margin-bottom: 0.5rem;
+}
+
+.project-title.pp {
+  font-size: var(--font-size-l);
+}
+
+.pp-filter-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 1500px;
+  overflow-x: auto;
+  padding-block: 0.5rem;
+}
+
+.pp-filter {
+  background-color: var(--color-light-gray);
+  padding: 1rem;
+  border-radius: 30px;
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.pp-filter:hover {
+  cursor: pointer;
+  background-color: var(--color-design);
+  color: var(--color-white);
+  transition: all 0.8s ease;
+}
+
+.pp-filter {
+  background-color: #f3f7fe;
+  color: var(--color-dark-gray);
+  padding: 1rem;
+  border-radius: 30px;
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.pp-filter:hover {
+  background-color: var(--color-design);
+  box-shadow: 0 0 0 5px #f667345f;
+  color: #fff;
+}
+
+.pp-filter.active {
+  background-color: var(--color-design);
+  color: var(--color-white);
+}
+
+@media (max-width: 1000px) {
+  .pp-card-container {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .pp-card-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

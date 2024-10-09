@@ -1,0 +1,86 @@
+#timeline {
+  margin-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.timeline-element {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#element-content {
+  width: 500px;
+  height: 200px;
+  padding: 1rem;
+  /* background-color: var(--color-light-gray); */
+  border-top: 1px solid var(--color-gray);
+
+  /* border-radius: 15px; */
+}
+
+.right {
+  border-right: 1px solid var(--color-gray);
+  text-align: right;
+}
+
+.left {
+  border-left: 1px solid var(--color-gray);
+}
+
+/* Formazione */
+#element-period {
+  width: 230px;
+  height: 75px;
+  /* background-color: var(--color-light-gray); */
+  border: 1px solid var(--color-gray);
+  /* border-radius: 15px; */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  color: var(--color-gray);
+}
+
+#ep-title {
+  font-size: var(--font-size-xxs);
+}
+
+#ep-year {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-regular);
+}
+
+#ep-month {
+  font-size: var(--font-size-xxs);
+}
+
+#element-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#ec-title {
+  text-transform: uppercase;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-m);
+}
+
+#ec-subtitle {
+  font-size: var(--font-size-s-m);
+  font-weight: var(--font-weight-light);
+}
+
+#ec-desc {
+  font-size: var(--font-size-s);
+}
+
+#ec-vote {
+  font-weight: var(--font-weight-medium);
+}

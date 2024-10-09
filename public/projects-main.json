@@ -1,0 +1,38 @@
+[
+  {
+    "type": "Project Management",
+    "title": "Equestro & Acavallo ecommerce B2C",
+    "img": "assets/img/b2c.jpg",
+    "url": "/progetti/b2c"
+  },
+  {
+    "type": "Project Management",
+    "title": "Amahorse B2B platform & digital services",
+    "img": "assets/img/b2b.jpg",
+    "url": "/progetti/b2b"
+  },
+  {
+    "type": "Data analysis",
+    "title": "Amahorse PowerBI Platform",
+    "img": "assets/img/pbi.jpg",
+    "url": "/progetti/pbi"
+  },
+  {
+    "type": "Frontend Development",
+    "title": "Acavallo 3d totem",
+    "img": "assets/img/3d_totem.jpg",
+    "url": "/progetti/3dtotem"
+  },
+  {
+    "type": "Frontend Development",
+    "title": "Landing page",
+    "img": "assets/img/lp_rtech.jpg",
+    "url": "/progetti/lp"
+  },
+  {
+    "type": "Brand Identity",
+    "title": "Birra Meltina",
+    "img": "assets/img/meltina.jpg",
+    "url": "/progetti/meltina"
+  }
+]

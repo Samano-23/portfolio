@@ -1,0 +1,88 @@
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  margin-inline: 2rem;
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-s);
+}
+
+/* Text effect menu */
+
+.link {
+  height: 30px;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  display: flex;
+}
+
+/* Hide extra text */
+.mask {
+  position: relative;
+  padding: 0;
+  height: 20px;
+
+  /*  Remove overflow to see how it works　:) */
+  overflow: hidden;
+}
+
+.link-container {
+  transition: transform 0.4s ease;
+}
+
+.title {
+  display: block;
+
+  /*  Set same font-size and line height  */
+  font-size: var(--font-size-s);
+  line-height: 20px;
+
+  transition: transform 0.4s ease;
+}
+
+.link-title1 {
+  transform-origin: right center;
+}
+
+.link-title2 {
+  transform-origin: left center;
+  transform: rotate(20deg);
+  background-color: var(--color-design);
+  color: var(--color-white);
+  padding-inline: 0.5rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Move up two texts (20px = font-size) */
+.link:hover .link-container {
+  transform: translateY(-20px);
+}
+
+/* Rotate texts a little bit */
+.link:hover .link-title1 {
+  transform: rotate(20deg);
+}
+
+.link:hover .link-title2 {
+  transform: rotate(0);
+}
+/* END Text effect menu */
+
+.title-active {
+  background-color: var(--color-design);
+  color: var(--color-white);
+  text-align: center;
+  padding-inline: 0.5rem;
+  border-radius: 10px;
+}
+
+.menu-line {
+  background-color: var(--color-gray);
+  height: 1px;
+  margin-inline: 2rem;
+}
