@@ -110,6 +110,7 @@ const Progetti = () => {
             <p>Caricamento progetti...</p>
           )}
         </div>
+        <div>Test</div>
       </section>
     </div>
   );
