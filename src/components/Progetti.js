@@ -111,6 +111,7 @@ const Progetti = () => {
           )}
         </div>
         <div>Test</div>
+        <div>Test 2</div>
       </section>
     </div>
   );
