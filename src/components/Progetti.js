@@ -110,8 +110,6 @@ const Progetti = () => {
             <p>Caricamento progetti...</p>
           )}
         </div>
-        <div>Test</div>
-        <div>Test 2</div>
       </section>
     </div>
   );

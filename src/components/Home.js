@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../index.css";
+import { FaWhatsapp, FaLinkedin, FaInstagram } from "react-icons/fa";
 import Menu from "../components/Menu";
+/* import Footer from "../components/Footer"; */
 
 const Home = () => {
   const textRef = useRef(null); // Ref per selezionare l'elemento con l'ID "job"
@@ -86,21 +88,6 @@ const Home = () => {
           <span id="job" ref={textRef}>
             Marketing & digital specialist
           </span>
-          {/* <a className="mailto" href="mailto:mattia.giulietti@gmail.com">
-            <span id="mail">mattia.giulietti@gmail.com</span>
-          </a> */}
-          <a className="mailto" href="mailto:mattia.giulietti@gmail.com">
-            <span className="mask">
-              <div className="link-container">
-                <span className="link-title1 title">
-                  mattia.giulietti@gmail.com
-                </span>
-                <span className="link-title2 title">
-                  mattia.giulietti@gmail.com
-                </span>
-              </div>
-            </span>
-          </a>
         </div>
         <div className="home-img"></div>
       </section>
@@ -131,6 +118,36 @@ const Home = () => {
       ) : (
         <p>Caricamento progetti...</p>
       )}
+      <div className="contact-home-container">
+        <div className="contact-home-text">
+          Hai qualcosa in mente? <br></br>{" "}
+          <span style={{ fontWeight: "bold" }}> Scrivimi</span>
+        </div>
+        <div className="contact-home-contact">
+          <a className="mailto" href="mailto:mattia.giulietti@gmail.com">
+            <span className="mask">
+              <div className="link-container">
+                <span className="link-title1 title">
+                  mattia.giulietti@gmail.com
+                </span>
+                <span className="link-title2 title">
+                  mattia.giulietti@gmail.com
+                </span>
+              </div>
+            </span>
+          </a>
+          <a href="https://www.linkedin.com/in/mattia-giulietti/">
+            <FaLinkedin />
+          </a>
+          <a href="https://wa.me/+393392108680">
+            <FaWhatsapp />
+          </a>
+          <a href="https://www.instagram.com/samanino/">
+            <FaInstagram />
+          </a>
+        </div>
+      </div>
+      {/* <Footer />  */}
     </div>
   );
 };
