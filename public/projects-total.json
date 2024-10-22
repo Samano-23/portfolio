@@ -37,8 +37,14 @@
   },
   {
     "type": "Logo animation",
-    "title": "Equestro seasonal campaign",
-    "video": "assets/img/logo_animation.mp4",
+    "title": "Equestro Ridertech",
+    "video": "assets/img/rtech.mp4",
+    "url": "/progetti/seasonal"
+  },
+  {
+    "type": "Logo animation",
+    "title": "Equestro x FISE",
+    "video": "assets/img/fise.mp4",
     "url": "/progetti/seasonal"
   }
 ]
