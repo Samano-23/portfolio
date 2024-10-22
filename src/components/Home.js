@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "../index.css";
 import { FaWhatsapp, FaLinkedin, FaInstagram } from "react-icons/fa";
 import Menu from "../components/Menu";
-/* import Footer from "../components/Footer"; */
+import Footer from "../components/Footer";
 
 const Home = () => {
   const textRef = useRef(null); // Ref per selezionare l'elemento con l'ID "job"
@@ -147,7 +147,7 @@ const Home = () => {
           </a>
         </div>
       </div>
-      {/* <Footer />  */}
+      <Footer />
     </div>
   );
 };
