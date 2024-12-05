@@ -105,11 +105,6 @@ a:visited {
   transform: translateY(0);
 }
 
-.menu {
-  position: fixed;
-  top: 1rem;
-}
-
 .home-content {
   display: flex;
   margin-inline: 2rem;
