@@ -118,7 +118,22 @@ const Home = () => {
       ) : (
         <p>Caricamento progetti...</p>
       )}
-      <div className="contact-home-container">
+      <div className="home-container about">
+        <span> About me </span>
+        <span>
+          Sono un professionista con una formazione in economia e una grande
+          passione per il digitale. Dopo la laurea magistrale, ho approfondito
+          le mie competenze con master in marketing, data analysis e sviluppo
+          web. Dal 2019 lavoro in Amahorse Trading SRL, dove gestisco i canali
+          ecommerce, analizzo dati aziendali e supporto lo sviluppo strategico
+          dei brand aziendali. Lo sport è sempre stato centrale nella mia vita:
+          ho praticato enduro a livello semi-professionistico, portandolo avanti
+          anche durante gli studi. È da lì che ho imparato a lavorare con
+          determinazione e a non mollare mai, qualità che oggi applico anche al
+          mio lavoro
+        </span>
+      </div>
+      <div className="home-container">
         <div className="contact-home-text">
           Hai qualcosa in mente? <br></br>{" "}
           <span style={{ fontWeight: "bold" }}> Scrivimi</span>

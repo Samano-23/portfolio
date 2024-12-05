@@ -36,7 +36,7 @@ body {
   font-family: Arboria;
   /* height: 100vh; 
     margin: auto;*/
-  max-width: 1920px;
+  max-width: 2048;
   margin: 0 auto;
 }
 .hide {
@@ -45,6 +45,7 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--color-black);
 }
 
 a:visited {
@@ -297,7 +298,7 @@ a:visited {
   height: 50%;
 }
 
-.contact-home-container {
+.home-container {
   margin-block: 2rem;
   margin-inline: 2rem;
   padding: 3rem 2rem;
@@ -307,6 +308,10 @@ a:visited {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.home-container.about {
+  flex-direction: column;
 }
 
 .contact-home-text {
