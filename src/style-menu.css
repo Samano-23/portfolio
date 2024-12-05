@@ -1,3 +1,10 @@
+.menu-container {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(9px);
+  z-index: 100;
+}
+
 .menu-bar {
   display: flex;
   justify-content: space-between;

@@ -4,7 +4,7 @@ import "../style-menu.css";
 
 const Menu = () => {
   return (
-    <div>
+    <div className="menu-container">
       <section className="menu-bar">
         <Link to="/about" className="link">
           <span className="mask">

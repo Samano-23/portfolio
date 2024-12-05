@@ -6,11 +6,13 @@
   --font-size-m: 18px;
   --font-size-l: 22px;
   --font-size-xl: 24px;
+  --font-size-xxl: 28px;
   --color-design: #ff2f00;
   --color-white: #fff;
   --color-black: #000;
   --color-gray: #4f4f4f;
   --color-light-gray: #f5f5f7;
+  --color-border: #00000014;
   --gap-xs: 1rem;
   --gap-s: 2rem;
   --gap-m: 4rem;
@@ -34,8 +36,7 @@ body {
   /* font-family: "Montserrat", sans-serif, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace; */
   font-family: Arboria;
-  /* height: 100vh; 
-    margin: auto;*/
+  /* background-color: #121212; */
   max-width: 2048;
   margin: 0 auto;
 }
@@ -102,6 +103,11 @@ a:visited {
 #visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.menu {
+  position: fixed;
+  top: 1rem;
 }
 
 .home-content {
@@ -216,7 +222,8 @@ a:visited {
   width: 300px;
   height: 280px;
   background-color: var(--color-white);
-  box-shadow: 2px 4px 12px #00000014;
+  /* box-shadow: 2px 4px 12px #00000014; */
+  border: 1px solid var(--color-border);
   border-radius: 18px;
   transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
   display: flex;
@@ -252,7 +259,7 @@ a:visited {
 
 .project-slider {
   display: flex;
-  animation: scroll 30s linear infinite; /* Imposta l'animazione */
+  animation: scroll 50s linear infinite; /* Imposta l'animazione */
   align-items: center;
   height: 320px;
 }
@@ -304,7 +311,8 @@ a:visited {
   padding: 3rem 2rem;
   background-color: var(--color-white);
   border-radius: 18px;
-  box-shadow: 2px 4px 12px #00000014;
+  /* box-shadow: 2px 4px 12px #00000014; */
+  border: 1px solid var(--color-border);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -312,10 +320,40 @@ a:visited {
 
 .home-container.about {
   flex-direction: column;
+  .title {
+    align-self: flex-start;
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-design);
+  }
+  .subtitle {
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-black);
+    align-self: flex-start;
+    margin-top: 0.5rem;
+    width: 50%;
+  }
+  .caption {
+    margin-top: 1rem;
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-light);
+    color: var(--color-black);
+    align-self: flex-start;
+    width: 50%;
+  }
+}
+
+.line {
+  background-color: var(--color-border);
+  height: 1px;
+  margin-inline: 2rem;
+  width: 100%;
+  margin-block: 1.5rem;
 }
 
 .contact-home-text {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-xxl);
   line-height: 2.5rem;
   font-weight: var(--font-weight-light);
 }
