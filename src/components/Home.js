@@ -8,9 +8,10 @@ const Home = () => {
   const textRef = useRef(null); // Ref per selezionare l'elemento con l'ID "job"
   const typingIntervalRef = useRef(null); // Ref per tenere traccia dell'intervallo di digitazione
   const [projectData, setProjectData] = useState(null); // Stato per memorizzare i dati del JSON
+  const [DailySuite, setDailySuite] = useState(null); // Stato per memorizzare i dati del JSON
 
   useEffect(() => {
-    // Funzione per caricare i dati dal file JSON
+    // Funzione per caricare i dati dal file JSON projects-main.json
     const fetchProjectData = async () => {
       try {
         const response = await fetch("/projects-main.json"); // Path relativo al file JSON nella cartella public
@@ -25,6 +26,22 @@ const Home = () => {
     };
 
     fetchProjectData();
+
+    // Funzione per caricare i dati dal file JSON projects-main.json
+    const fetchDailySuite = async () => {
+      try {
+        const response = await fetch("/daily_suite.json"); // Path relativo al file JSON nella cartella public
+        if (!response.ok) {
+          throw new Error("Errore nel caricamento del file JSON");
+        }
+        const data = await response.json();
+        setDailySuite(data); // Salva i dati nello stato
+      } catch (error) {
+        console.error("Errore nel caricamento dei dati:", error);
+      }
+    };
+
+    fetchDailySuite();
 
     const typeText = (content, callback) => {
       if (!textRef.current) return; // Controlla se textRef è presente
@@ -137,6 +154,27 @@ const Home = () => {
           per diversi anni enduro a livello semi-professionistico.
         </span>
         <div className="line"></div>
+        <span className="subtitle">Daily suite</span>
+        <span className="caption">I software che utilizzo quotidianamente</span>
+        {DailySuite ? (
+          <div className="project-list suite">
+            <div className="project-slider suite">
+              {/* Itera sui progetti due volte per un effetto continuo */}
+              {DailySuite.concat(DailySuite).map((suite, index) => (
+                <div key={index} className="project-card suite">
+                  <img
+                    src={suite.img}
+                    alt={suite.title}
+                    className="project-image"
+                  />
+                  <h3 className="project-title">{suite.title}</h3>
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <p>Caricamento progetti...</p>
+        )}
       </div>
       <div className="home-container">
         <div className="contact-home-text">
