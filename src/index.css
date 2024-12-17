@@ -273,6 +273,11 @@ a:visited {
 .project-list.suite img {
   width: 30px;
   border-radius: 0;
+  filter: grayscale(100%);
+}
+
+.project-list.suite img:hover {
+  filter: grayscale(0%);
 }
 
 .project-slider {
