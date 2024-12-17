@@ -1,54 +1,30 @@
 [
   {
     "title": "Power BI",
-    "img": "assets/img/pbi_logo.svg"
+    "img": "assets/img/daily_suite/pbi_logo.svg"
   },
   {
     "title": "Visual Studio Code",
-    "img": "assets/img/vscode_logo.svg"
+    "img": "assets/img/daily_suite/vscode.svg"
   },
   {
-    "title": "Power BI",
-    "img": "assets/img/pbi_logo.svg"
+    "title": "Angular",
+    "img": "assets/img/daily_suite/angular.svg"
   },
   {
-    "title": "Power BI",
-    "img": "assets/img/pbi_logo.svg"
+    "title": "Chat GPT",
+    "img": "assets/img/daily_suite/chatgpt.svg"
   },
   {
-    "title": "Test",
-    "img": "assets/img/pbi_logo.svg"
+    "title": "Copilot",
+    "img": "assets/img/daily_suite/copilot.svg"
   },
   {
-    "title": "Power BI",
-    "img": "assets/img/pbi_logo.svg"
+    "title": "GitHub",
+    "img": "assets/img/daily_suite/github.svg"
   },
   {
-    "title": "Test",
-    "img": "assets/img/pbi_logo.svg"
-  },
-  {
-    "title": "Power BI",
-    "img": "assets/img/pbi_logo.svg"
-  },
-  {
-    "title": "Power BI",
-    "img": "assets/img/pbi_logo.svg"
-  },
-  {
-    "title": "Test",
-    "img": "assets/img/pbi_logo.svg"
-  },
-  {
-    "title": "Power BI",
-    "img": "assets/img/pbi_logo.svg"
-  },
-  {
-    "title": "Test",
-    "img": "assets/img/pbi_logo.svg"
-  },
-  {
-    "title": "Testissimo",
-    "img": "assets/img/pbi_logo.svg"
+    "title": "Jira",
+    "img": "assets/img/daily_suite/jira.svg"
   }
 ]

@@ -155,7 +155,9 @@ const Home = () => {
         </span>
         <div className="line"></div>
         <span className="subtitle">Daily suite</span>
-        <span className="caption">I software che utilizzo quotidianamente</span>
+        <span className="caption">
+          Software, strumenti e linguaggi che utilizzo quotidianamente
+        </span>
         {DailySuite ? (
           <div className="project-list suite">
             <div className="project-slider suite">
