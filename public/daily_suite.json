@@ -26,5 +26,49 @@
   {
     "title": "Jira",
     "img": "assets/img/daily_suite/jira.svg"
+  },
+  {
+    "title": "CSS",
+    "img": "assets/img/daily_suite/css.svg"
+  },
+  {
+    "title": "Excel",
+    "img": "assets/img/daily_suite/excel.svg"
+  },
+  {
+    "title": "Figma",
+    "img": "assets/img/daily_suite/figma.svg"
+  },
+  {
+    "title": "GitHub",
+    "img": "assets/img/daily_suite/github.svg"
+  },
+  {
+    "title": "HTML",
+    "img": "assets/img/daily_suite/html.svg"
+  },
+  {
+    "title": "Illustrator",
+    "img": "assets/img/daily_suite/illustrator.svg"
+  },
+  {
+    "title": "Power BI",
+    "img": "assets/img/daily_suite/pbi_logo.svg"
+  },
+  {
+    "title": "Photoshop",
+    "img": "assets/img/daily_suite/photoshop.svg"
+  },
+  {
+    "title": "React",
+    "img": "assets/img/daily_suite/react.svg"
+  },
+  {
+    "title": "SQL",
+    "img": "assets/img/daily_suite/sql.svg"
+  },
+  {
+    "title": "XD",
+    "img": "assets/img/daily_suite/xd.svg"
   }
 ]
