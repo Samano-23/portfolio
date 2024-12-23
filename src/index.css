@@ -276,7 +276,7 @@ a:visited {
   filter: grayscale(100%);
 }
 
-.project-list.suite img:hover {
+.project-list.suite:hover img {
   filter: grayscale(0%);
 }
 
